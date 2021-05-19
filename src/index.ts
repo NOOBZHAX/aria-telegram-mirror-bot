@@ -1009,9 +1009,9 @@ function driveUploadCompleteCallback(err: string, gid: string, url: string, file
     console.log(`${gid}: Uploaded `);
     if (fileSize) {
       var fileSizeStr = downloadUtils.formatSize(fileSize);
-      finalMessage = `<b>GDrive Link</b>: <a href="${url}">${fileName}</a> (${fileSizeStr})`;
+      finalMessage = `<b>FileName</b>: <a href="${url}">${fileName}</a>\n <b>Size</b> :(${fileSizeStr})`;
     } else {
-      finalMessage = `<b>GDrive Link</b>: <a href='${url}'>${fileName}</a>`;
+      finalMessage = `<b>FileName</b>: <a href='${url}'>${fileName}</a>`;
     }
 
     if (gdIndexLink && constants.INDEX_DOMAIN) {
